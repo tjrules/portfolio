@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
+import Nav from './components/Nav';
 
 class App extends Component {
-  render(){
-    return (
-      <div className='App'>
-        <h1 className='header'>Hello World</h1>
-        
-      </div>
-      )
-  }
+    render() {
+        return ( 
+            
+            <MuiThemeProvider >
+               <AppBarExampleComposition/>
+                
+            < /MuiThemeProvider>
+            
+        )
+    }
 }
 
 export default App;

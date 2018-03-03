@@ -39,6 +39,7 @@
     "passport-local": "^1.0.0",
     "pg-promise": "^7.4.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-tap-event-plugin": "^3.0.2"
   }
 }
