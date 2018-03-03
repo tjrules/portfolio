@@ -1,7 +1,7 @@
 const Project = require('../models/project');
-const projectsController {};
+const projectsController = {};
 
-projectsController.indes = (req, res) => {
+projectsController.index = (req, res) => {
     Project.findAll(req.user.id)
         .then(projects => {
             res.json({
@@ -37,7 +37,8 @@ projectsController.create = (req, res) => {
                             console.log('problems in the create controlelr', err);
                             res.status(400).json(err);
                         });
-                };
+                })
+                  };
 
 projectsController.show = (req, res) => {
             Project.findById(req.params.id)
