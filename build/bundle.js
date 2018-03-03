@@ -7735,10 +7735,6 @@ var _RaisedButton = __webpack_require__(188);
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
-var _Nav = __webpack_require__(211);
-
-var _Nav2 = _interopRequireDefault(_Nav);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -7759,11 +7755,7 @@ var App = function (_Component) {
     _createClass(App, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(
-                _MuiThemeProvider2.default,
-                null,
-                _react2.default.createElement(AppBarExampleComposition, null)
-            );
+            return _react2.default.createElement(_MuiThemeProvider2.default, null);
         }
     }]);
 
@@ -19390,14 +19382,6 @@ exports.default = {
   zDepth: _propTypes2.default.oneOf([0, 1, 2, 3, 4, 5])
 
 };
-
-/***/ }),
-/* 209 */,
-/* 210 */,
-/* 211 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: SyntaxError: Unexpected token (12:17)\n\n\u001b[0m \u001b[90m 10 | \u001b[39m\n \u001b[90m 11 | \u001b[39m\u001b[36mclass\u001b[39m \u001b[33mLogin\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mComponent\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 | \u001b[39m  static muiName \u001b[33m=\u001b[39m \u001b[32m'FlatButton'\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    | \u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 | \u001b[39m\n \u001b[90m 14 | \u001b[39m  render() {\n \u001b[90m 15 | \u001b[39m    \u001b[36mreturn\u001b[39m (\u001b[0m\n");
 
 /***/ })
 /******/ ]);
