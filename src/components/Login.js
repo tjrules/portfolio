@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Redirect} from 'react-router-dom';
-import Header from './Header';
+
 
 class Login extends Component {
     constructor(){
@@ -47,28 +47,28 @@ class Login extends Component {
     render() {
         return(
             <div className="container">
-                <Nav />
-                <h1 class="jumbotron">Welcome TJ please login to your account.</h1>
-                <div class="row">
-                    <div class="col-md-12 text-center">
+                
+                <h1 className="jumbotron">Welcome TJ please login to your account.</h1>
+                <div className="row">
+                    <div className="col-md-12 text-center">
                         <form action="/auth/login" onSubmit={this.handleSubmit} id="login-form" method="post" role="form">
-                            <div class="form-group">
+                            <div className="form-group">
                                 <input type="text" onChange={this.handleChange} name="username" id="username" tabindex="1" class="form-control" placeholder="username"/>
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <input type="text" onChange={this.handleChange} name="password" id="password" tabindex="2" class="form-control" placeholder="password"/>
                             </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-6 col-sm-offset-3">
+                            <div className="form-group">
+                                <div className="row">
+                                    <div className="col-sm-6 col-sm-offset-3">
                                         <input type="submit" onChange={this.handleChange} name="login-submit" id="login-submit" tabindex="3" class="form-control btn btn-login" value="Login"/>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="text-center">
+                            <div className="form-group">
+                                <div className="row">
+                                    <div className="col-lg-12">
+                                        <div className="text-center">
                                             <a href="/auth/register">Register</a>
                                         </div>
                                     </div>
