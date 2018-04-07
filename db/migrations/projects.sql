@@ -1,8 +1,8 @@
-/c portfolio
+\c
 
 DROP TABLE IF EXISTS projects
 
-CREATE TABLE IF NOT EXISTS users(
+CREATE TABLE IF NOT EXISTS projects(
     id SERIAL PRIMARY KEY,
     title VARCHAR(255),
     description TEXT,

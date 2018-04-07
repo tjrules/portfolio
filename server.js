@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const PORT = process.env.PORT || 3000;
+require('dotenv').config();
 
 app.use(morgan('dev'))
 app.use(bodyParser.json());

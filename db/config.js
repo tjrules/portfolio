@@ -10,7 +10,9 @@ function setDatabase() {
         return pgp({
             database: 'portfolio',
             port: 5432,
-            host: 'localhost'
+            host: 'localhost',
+            user: 'postgres',
+            password: process.env.PGPASSWORD
         });
     } else if (process.env.NODE_ENV === 'production') {
         return pgp(process.env.DATABASE_URL);
