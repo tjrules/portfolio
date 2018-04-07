@@ -9,7 +9,7 @@ import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 
 class Login extends Component {
-  static muiName = 'FlatButton';
+//  static muiName = 'FlatButton';
 
   render() {
     return (
